@@ -4,7 +4,7 @@ class Student(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     birth_date = models.DateField()
-    student_id = models.IntegerField(max_length=10, unique=True)
+    student_id = models.IntegerField(unique=True)
     faculty = models.CharField(max_length=100)
     group = models.CharField(max_length=10)
     height = models.FloatField()
